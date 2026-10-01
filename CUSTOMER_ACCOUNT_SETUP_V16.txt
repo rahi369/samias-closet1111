@@ -1,0 +1,16 @@
+SAMIA'S CLOSET V16 — CUSTOMER ACCOUNT
+
+Customer browsing:
+- Visitors can open and browse the website without signing in.
+
+Required account:
+- Order placement, voucher wallet, daily quiz, mystery box and order tracking require a customer account.
+- Customer account uses Firebase Email/Password authentication.
+- Firebase Console > Authentication > Sign-in method > Email/Password must be enabled.
+- Customer signs up with their own email and password, then can log in again later.
+- Firebase browserLocalPersistence keeps the same account signed in on the same browser until logout/browser data is cleared.
+
+Admin:
+- Admin panel can see the customer's email and Customer ID in reward users/orders.
+- Passwords are NEVER stored in Firestore and cannot be shown to the admin. This is intentional for security.
+- If a password needs to be reset, use Firebase Authentication's password reset flow or Firebase Console.
